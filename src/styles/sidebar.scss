@@ -1,0 +1,117 @@
+
+$sidebarBgColor:  var(--sidebarBgColor, #203457);
+$sidebarOpenedBgColor:  var(--sidebarOpenedBgColor, #162A4E);
+$sidebarHoverColor:  var(--sidebarHoverColor, #709BE6);
+$sidebarTextColor: var(--sidebarTextColor, #6C9CE9);
+
+#app  .el-menu-item:hover {
+  color: #fff !important;
+}
+
+#app  .el-menu {
+  border-right: none;
+  i {
+      color: #fff;
+  }
+}
+
+
+#app .menu-wrapper .is-active  {
+  background-color: $sidebarHoverColor !important;
+  color: #ffffff !important;
+}
+
+#app  .el-menu-item .is-active .submenu-title-noDropdown {
+  background-color: $sidebarHoverColor !important;
+}
+
+
+#app  .nest-menu .el-submenu > .el-submenu__title:hover,
+#app  .el-submenu__title:hover {
+  color: #fff !important;
+  .el-submenu__icon-arrow {
+    color: #fff !important;
+  }
+}
+
+#app .el-menu-item:hover {
+  background: $sidebarHoverColor !important;
+}
+#app .el-submenu__title:hover {
+  background: $sidebarOpenedBgColor !important;
+}
+
+.submenu-title-noDropdown,
+  .el-submenu__title {
+    &:hover {
+      background-color: $sidebarHoverColor !important;
+    }
+}
+
+#app  .menu-wrapper .is-opened  {
+  .el-submenu__title {
+    background-color: $sidebarOpenedBgColor !important;
+  }
+}
+
+#app  .submenu-title-noDropdown, .is-opened {
+  .el-menu-item {
+      background-color: $sidebarOpenedBgColor !important;
+  }
+}
+
+
+.sidebar-wrap {
+  background-color: $sidebarBgColor;
+}
+
+.el-menu {
+  border-right: none;
+  height: 100%;
+  width: 100% ;
+}
+
+.el-menu--collapse {
+      .el-submenu {
+        &>.el-submenu__title {
+          &>span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+// 收缩时候的样式
+.collapse {
+  .el-submenu__icon-arrow {
+    display: none;
+  }
+}
+
+// 重置 elUI 样式
+.horizontal-collapse-transition {
+  transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+}
+
+.scrollbar-wrapper {
+  overflow-x: hidden ;
+}
+
+.el-scrollbar__bar.is-vertical {
+  right: 0px;
+}
+
+.el-scrollbar {
+  height: 100%;
+}
+
+
+
+:export {
+  sidebarBgColor: $sidebarBgColor;
+  sidebarTextColor: $sidebarTextColor;
+}

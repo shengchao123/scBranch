@@ -1,0 +1,54 @@
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.row {
+  @extend .flex;
+  flex-direction: row;
+}
+.column {
+  @extend .flex;
+  flex-direction: column;
+}
+.flex1{
+  flex: 1;
+}
+.flex {
+  display: flex;
+}
+
+.f-wrap{
+  @extend .flex;
+  flex-wrap: wrap;
+}
+.f-nowrap{
+  @extend .flex;
+  flex-wrap: nowrap;
+}
+
+.between-row {
+  @extend .row;
+  justify-content: space-between;
+}
+.between-column {
+  @extend .column;
+  justify-content: space-between;
+}
+.center {
+  @extend .flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-align {
+  @extend .flex;
+  align-items: center;
+}
+
+.center-justify {
+  @extend .flex;
+  justify-content: center;
+}

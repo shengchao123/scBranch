@@ -1,0 +1,67 @@
+
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+
+
+// 文字按钮
+.text-btn {
+  color: $primaryColor;
+  cursor: pointer;
+}
+.text-btn:hover {
+  opacity: 0.7;
+}
+
+// 带边框的次级按钮，去掉点击后保留的颜色状态
+.secondary-btn {
+  @extend .bp;
+  color: $primaryColor;
+}
+
+.secondary-btn:focus  {
+  background-color: transparent;
+}
+
+// 普通按钮
+.plain-btn {
+  color: $color-666;
+  @extend .b;
+}
+.plain-btn:focus  {
+  background-color: transparent;
+}
+
+.text-hidden {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.shadow {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+}
+
+.info-title {
+  @extend .bold;
+  position: relative;
+}
+.info-title:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background: $primaryColor;
+  top: 1px;
+  left: -12px;
+}

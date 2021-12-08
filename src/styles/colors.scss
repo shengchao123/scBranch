@@ -1,0 +1,57 @@
+// 主色调，全局配置
+$primaryColor: var(--colorPrimary, #518CFC);
+// 背景色
+$color-eee: #eeeeee;
+// 边框颜色
+$color-de: #dedede;
+// 组件背景颜色
+$color-f9: #f9f9f9;
+
+// 各种状态颜色
+$color-00c463: #00c463;
+$color-f6ab0f: #f6ab0f;
+$color-FC8D11: #FC8D11;
+$color-f40000: #f40000;
+
+// 文字颜色
+$color-333: #333333;
+$color-666: #666666;
+$color-999: #999999;
+
+
+.color-f9 {
+  color: $color-f9;
+}
+
+.color-333 {
+  color: $color-333
+}
+.color-666 {
+  color: $color-666
+}
+
+.color-999 {
+  color: $color-999
+}
+
+
+
+.primary-color {
+  color: $primaryColor;
+}
+
+.success-color {
+  color: $color-00c463
+}
+
+.warning-color {
+  color: $color-f6ab0f
+}
+
+.tip-main-color {
+  color: $color-FC8D11;
+}
+
+.error-color {
+  color: $color-f40000
+}
